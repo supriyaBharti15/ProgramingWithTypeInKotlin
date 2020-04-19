@@ -21,5 +21,17 @@
 ```kotlin
 // use 'open' to show class can be derived.
 // also with function we have to use 'open' 
+//Example
+ open class Student() {
+        val firstName = "Supriya"
+        val lastNAme = "Bharti"
+        open fun getStudent(): String = "$firstName  $lastNAme"
+    }
+
+    class College() : Student() {
+        override fun getStudent(): String {
+            return ""
+        }
+    }
 ```
 
