@@ -77,5 +77,10 @@ val s1 = Student(1, "supriya")
         if (s1 == s2) println("Equal") else println("Not Equal")
     //Output will be  Equal
  println(s1) //Output : Student(id=1, name=supriya)
+ /Make the copy
+        val s1Copy = s1.copy(1, "navin")
+        println(s1Copy) // Output :: Student(id=1, name=navin)
+        if (s1 == s1Copy) println("Equal") else println("Not Equal") // Output :: Not Equal
+ 
     data class Student(val id: Int, val name: String) {}
 ```
