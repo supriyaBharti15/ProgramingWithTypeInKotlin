@@ -43,5 +43,22 @@
         fun getAddress() {} // cannot be override because this is the final class
     }
 ```
-## Sealed Classes
+## Constructor
+```kotlin
+ open class Student(name: String, id: String) {
+        val name: String
+        val id: String
+
+        init {
+            this.name = name
+            this.id = id
+        }
+    }
+    ```
+    ```kotlin
+    //Constructor type 2
+    class College(address: String){
+        val addrs = address
+    }
+```
 
