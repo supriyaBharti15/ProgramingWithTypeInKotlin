@@ -18,5 +18,8 @@
       fun multi() {}
     }
 ```
-
+```kotlin
+// use 'open' to show class can be derived.
+// also with function we have to use 'open' 
+```
 
