@@ -34,4 +34,12 @@
         }
     }
 ```
+## abstract
+```kotlin
 
+    abstract class Student {
+        abstract fun getName() // must be implements
+        open fun getRollNo() {} // can be override 
+        fun getAddress() {} // cannot be override because this is the final class
+    }
+```
