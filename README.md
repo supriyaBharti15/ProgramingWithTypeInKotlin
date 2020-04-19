@@ -43,3 +43,5 @@
         fun getAddress() {} // cannot be override because this is the final class
     }
 ```
+## Sealed Classes
+
