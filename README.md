@@ -61,4 +61,21 @@
         val addrs = address
     }
 ```
+## Data class
+```kotlin
+val s1 = Student(1, "supriya")
+        val s2 = Student(1, "supriya")
+        if (s1 == s2) println("Equal") else println("Not Equal")
+    //Output will be Not Equal
 
+ println(s1) //Output :MainActivity$Student@c337130
+    class Student(val id: Int, val name: String) {}
+```
+```kotlin
+val s1 = Student(1, "supriya")
+        val s2 = Student(1, "supriya")
+        if (s1 == s2) println("Equal") else println("Not Equal")
+    //Output will be  Equal
+ println(s1) //Output : Student(id=1, name=supriya)
+    data class Student(val id: Int, val name: String) {}
+```
