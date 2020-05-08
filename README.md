@@ -84,3 +84,16 @@ val s1 = Student(1, "supriya")
  
     data class Student(val id: Int, val name: String) {}
 ```
+## Generic class
+```kotlin
+class GenericKotlin<T>(data: T) {
+    var data: T? = data
+}
+```
+## access Generic in main class in android
+```kotlin
+//Generic
+        println("value1 :: ${GenericKotlin<String>("Supriya").data}")
+        println("value2 :: ${GenericKotlin<Int>(123).data}")
+        println("value2 :: ${GenericKotlin(12.34).data}")
+```
